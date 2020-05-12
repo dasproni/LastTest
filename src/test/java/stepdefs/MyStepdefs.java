@@ -61,7 +61,8 @@ public class MyStepdefs {
 
     @Допустим("проверить подписанные выше темы")
     public void проверить_подписанные_выше_темы() {
-
+        $(By.xpath("//div[@class='media-left hidden-xs']/a/img")).shouldBe(Condition.visible);
+        Configuration.timeout = 6000;
 
     }
 
